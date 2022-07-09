@@ -1,0 +1,111 @@
+@charset "UTF-8"
+body{
+    background-image: linear-gradient(to right,#F1D8C9,pink);
+    font-family: Arial, Helvetica, sans-serif;
+    /* 
+    Font size=
+    Medidas absolutas:
+    cm, mm, in, px, pt, pc 
+    
+    Medidas Relativas:
+    em, ex, rem, vw, vh, %
+    */
+    font-weight: normal;
+    /*lighter normal(400) bold bolder */
+    font-style: normal;
+    /*italico ou negrito */
+}
+header {
+    background-color: blueviolet;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(194, 111, 125, 0.788);
+    width: 600px;
+    padding:10px;
+    margin:auto;
+}
+h1 {
+    color: rgb(160, 58, 58);
+    text-align: left; /* center, right, left*/
+    text-shadow: 1px 1px 2px rgb(129, 50, 50);
+
+}
+h1#cabeçalho{
+    color: white;
+    border: 20 px solid black;
+    padding: 10px;
+
+}
+h1#principal {
+    text-align: center;
+    background-color: rgb(129, 50, 50);
+    color: white
+    /* Em html é id = em css é #
+    Em html é class = em css é . */
+
+}
+h2{
+    color:rgb(39, 2, 37);
+    text-align: center;
+}
+.basico {
+    color: rgb(179, 134, 221);
+
+}
+.intermediario{
+    color: rgb(128, 71, 180);
+
+
+}
+.avançado{
+    color: rgb(62, 23, 99);
+
+
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+.destaque {
+    font-style:oblique;
+}
+
+div{
+    display: inline-block;
+    background-color: lightcoral;
+    border: 1px solid rgb(248, 242, 242);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+/* nav>a {
+    color: white ;
+} */
+
+a {
+    color: red;
+    text-decoration: double;
+    font-weight: bold;
+}
+a:visited {
+    color: darkred;
+
+}
+a:hover {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+a:after {
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: red
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+}

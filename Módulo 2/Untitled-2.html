@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cores e Fontes Css </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div:hover {
+            background-color: blueviolet;
+        }
+        div:hover>p {
+            display: block;
+            color: white;
+            background-color: blueviolet; /* mostrar o parágrafo escondido quando passa o mause */
+
+        }
+        div > p {
+            display: none; /* esconder o parágrafo dentro da div */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 id="cabeçalho"> Meu Site </h1>
+        <nav> 
+            <a href="#"> Link </a>
+        </nav>
+    </header>
+    <main>
+        <section id="exemplos"> 
+        <h1 id="principal"> Criando Sites com HTML e CSS </h1>
+        <h1> Aprendendo HTML</h1>
+        <h2 class="basico"> HTML básico </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias suscipit accusantium consequatur, sapiente dolorem cupiditate nulla, odit sint tenetur debitis? Deleniti in quaerat aliquam sequi ea <span class="basico"> perferendis </span> culpa saepe!</p>
+        <h2 class="intermediario">HTML intermediário</h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloribus dolorum voluptatibus <span class="destaque"> lino </span> illo consequatur excepturi praesentium corrupti ipsam consectetur consequuntur nulla veritatis, in, voluptates, qui neque deleniti. Magni, exercitationem qui?</p>
+        <h2 class="avançado">HTML avançado</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias suscipit accusantium consequatur, sapiente dolorem cupiditate nulla, odit sint tenetur debitis? Deleniti in quaerat aliquam sequi ea perferendis culpa saepe!</p>
+        <h1> Aprendendo CSS</h1>
+        <h2 class="basico"> CSS básico </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloribus dolorum voluptatibus illo consequatur excepturi praesentium corrupti ipsam consectetur consequuntur nulla veritatis, in, voluptates, qui neque deleniti. Magni, exercitationem qui?</p>
+        <h2 class="intermediario"> CSS intermediário </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias suscipit accusantium consequatur, sapiente dolorem cupiditate nulla, odit sint tenetur debitis? Deleniti in quaerat aliquam sequi ea perferendis culpa saepe!</p>
+        <h2 class="avançado"> CSS avançado </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit doloribus dolorum voluptatibus illo consequatur excepturi praesentium corrupti ipsam consectetur consequuntur nulla veritatis, in, voluptates, qui neque deleniti. Magni, exercitationem qui?</p>
+    
+        <asid> 
+        <h1> Exempo de hover </h1>
+        <p> Passe o mause sobre o texto abaixo </p>
+        <div> Passe o mause aqui 
+            <p> Texto escondido...</p>
+        </div>
+        <p> Fim do exemplo </p>
+        </asid>
+        </section>
+
+        <section id="testes">
+        <h1> Personalizando Links</h1>
+        <ul> 
+            <li> <a href="https://github.com/gipocetti" target="_blank"> Repositório GitHub</a> </li>
+            <li> <a href="https://youtube.com/cursoemvideo.com" target="_blank"> Site do Cursoemvideo </a></li>
+        </ul>
+
+        <h1> Exemplo de caixas box-level  </h1>
+        <p> O parágrafo também é um exemplo de box-level, mas os <a href="#"> links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona</p>
+
+        <h1>Como funcionam o agrupamento </h1> 
+        <p style="text-indent:0px;"> div= caixa box-level <br> span=inline-level
+        </p>
+
+        <h1> Divs</h1>
+        <div id="d1"> 01 </div>
+        <div id="d2"> 02 </div>
+        <div id="d3"> 03 </div>
+        <div id="d4"> 04 </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p> Desenvolvido pelo Cursoemvideo</p>
+
+    </footer>
+
+</body>
+</html>

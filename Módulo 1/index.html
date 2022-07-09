@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset= "UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tudo sobre HTML </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+        mark {
+            background-color: (escolher a cor);
+        }
+    </style>-->
+
+</head>
+
+<body>
+
+<h1> Prágrafos e quebras de linha </h1>
+<hr> 
+<p> Você pode escrever o parágrafo do jeito que quiser, basta colocar tudo no meio do par de tags &lt; p &gt; e &lt; /p &gt; 
+    <!-- LESS THAN / GREATER THAN --></p>
+
+<p>Se precisar quebrar o texto em um lugar específico <br> como esse, você pode usar a tag &lt; br &gt;. </p>
+
+<p> 
+    Vamos adicionar alguns símbolos especiais:
+    &reg;
+    &copy;
+    &trade;
+    &euro;
+    &pound;
+    &yen;
+    &cent;
+    &Delta;
+    &uarr;
+</p>
+
+<p> 
+    Vamos adicionar alguns emojis:
+    &#x1F596;
+    &#x1F913;
+</p>
+
+<h2>Negrito</h2>
+<p>
+    Nessa frase temos um <b> termo em negrito </b> usando a tag b (não semantica)
+</p>
+<p> 
+    Nesta frase tenho um <strong> termo em destaque</strong> usando a teg strong (semantica)
+</p>
+<h2>Itálico/ Ênfase </h2>
+<p> 
+    Nesta frase, temos um <i> termo em itálico </i> usando a tag I (não semantica)
+</p>
+<h2>Texto Marcado</h2>
+<P> 
+    Podemos criar também <mark style="background-color: lime;">  um texto marcado </mark> 
+</P>
+<p> 
+    E no outro parágrafo temos outro <mark style="background-color: lightcoral;"> texto marcado</mark>  
+</p> <!--Ou criar uma tag style lá em cima que irá marcar todos os "mark" da mesma cor-->
+
+<h2> Texto grande e pequeno </h2>
+<p> 
+    Estamos criando um <big> texto grande </big> e um <small>texto pequeno </small>
+</p>
+<h2> Texto deletado </h2>
+<p>
+    Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado 
+</p>
+<h2> Texto inserido </h2>
+<p> 
+    Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adcionado depois
+</p>
+<p> 
+    Podemos marcar um <u>texto como inserido</u> para dar ênfase e indicar que ele foi adcionado depois (não semantica)
+</p>
+<h2> Texto sobrescreto</h2>
+<p> 
+    Para inserir coisas do tipo x<sup>20</sup>+3
+</p>
+<h2> Texto sobscreto</h2>
+<p>
+    Para inserir coisas do tipo H<sub> 2 </sub>O
+</p>
+
+
+<h1> Outras formatações </h1>
+
+<h2>Código fonte</h2>
+<p> 
+    O comando document <code>getElementById('teste')</code> é escrito em linguagem JavaScript
+</p>
+
+<pre> 
+    <code>
+    num=int(input('Diite um numero: '))
+    if num % 2 ==0:
+      print(f'O npumero {num} é PAR)
+    else:
+      print(f'O npumero {num} é ÍMPAR)
+    print ('fim do programa')
+    </code>
+</pre>
+
+<h2>Citações</h2>
+<p>
+    Como diria o pai de um amigo: <q> o computador é um burro muito rápido</q>
+</p>
+<h2> Citações completas </h2>
+<p> Segundo Fulano, no seu livro LALALA: </p> <blockquote cite="https://www.bing.com/images/search?view=detailV2&ccid=2%2fnzb8P%2b&id=EEDEB2CEAD9532442B5EF6BB0B233FE5935CF440&thid=OIP.2_nzb8P-sE0evzuOzDYAyAHaKp&mediaurl=https%3a%2f%2fimg2.docero.com.br%2fimage%2fl%2fn1nn880.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.dbf9f36fc3feb04d1ebf3b8ecc3600c8%3frik%3dQPRck%252bU%252fIwu79g%26pid%3dImgRaw%26r%3d0&exph=1001&expw=696&q=livro+de+newton&simid=607990442605235414&FORM=IRPRST&ck=60417486540B62E4575D66ED44A3780E&selectedIndex=6&ajaxhist=0&ajaxserp=0"> 
+    enjdusbsnldngkdbknbg </blockquote>
+<!-- O link é para mostrar de onde veio a frase-->
+<h2> Abreviação </h2>
+<p>
+    Estou estudando <abdr title="MyperText Markup Languege"> HTML </abdr> e <abdr title="Cascading Style Sheets"> CSS </abdr>
+    <!--passar o mause em cima-->
+</p>
+<h2> Texto invertido </h2>
+<p>
+    <bdo dir="rtl"> O texto está invertido </bdo>
+</p>
+
+<h1> Listas </h1>
+<h2> Listas Ordenadas </h2>
+<ol type="1">  <!-- Colocar "A" ou "a" ou "i" dependendo de como quer a lista. Pode colocar start="" para escolher quando a lista começa-->
+    <li>Acordar</li>
+    <li>Tomar café</li>
+    <li> Correr</li>
+</ol>
+<h2> Listas não ordenadas </h2>
+<ul type="disc"> <!-- tipos: disc (padão), circle ou square-->
+    <li> pão</li>
+    <li> leite</li>
+    <li> manteiga </li>
+</ul>
+<h2> Justando listas </h2>
+<ol>
+    <li> Antigas </li>
+    <ol type="a"> 
+        <li> tatata</li>
+        <li> lalalala</li>
+    </ol>
+
+    <li> Novas</li>
+    <ol type="a" start="3">
+        <li> tanana</li>
+        <li> papapa</li>
+        <ul type="square">
+            <li> mario </li>
+            <li> musis </li>
+        </ul>
+    </ol>
+</ol>
+
+<h2> Listas de definição</h2>
+<dt> 
+    <dt> HTML </dt>
+    <dd> definição do que é html</dd>
+    <dt> JavaScript </dt>
+    <dd> definição do que é JavaScript</dd>
+</dt>
+
+<h1> Usando links externos </h1>
+<p> 
+    Você pode acessar o meu <a href="https://gipocetti.github.io" > repositório público no Github</a>
+</p>
+<p> 
+    Você também pode acessar o <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external" > canal do guanabara </a> <!-- abrir nova aba -->
+</p>
+
+<h1> Usando links internos </h1>
+<p> Esta é a primeira página do site. Se quiser pode acessar a minha <a href="Untitled-1.html" rel="next"> segunda página</a> </p>
+
+<h1> Link para dowloads </h1>
+<ul> 
+    <li> <a href="livro/Aula M5-01 - Notas de aula (1).pdf" download="Aula M5-01 - Notas de aula (1).pdf" type="application/pdf" target="_blank" rel="external"> Baixar o pdf</a> </li> <!--para aparecer a opção do link apertar corl e espaço--> 
+</ul>
+<p> <a href="pagina02.html" target="_self"> Ir para a página 3</a></p>
+
+
+</body>
+</html>
