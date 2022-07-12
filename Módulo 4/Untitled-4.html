@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4- Estudos de Iframe</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Essa é a terceira página 
+    </p>
+    <table>
+        <caption>
+            Lugares Favoritos 
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Grupos </th>
+                <th scope="col"> Nomes </th>
+                <th colspan="3" scope="colgroup"> Lugares </th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th> <!-- A palavra Total ocupa 4 células-->
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Brasil</td>
+                <td>Alemanha</td>
+                <td>Equador</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Paris</td>
+                <td>California</td>
+                <td>Espanha</td>
+            </tr>
+            <tr>
+                <td>Cláudia Mello</td>
+                <td>Bolivia</td>
+                <td>Peru</td>
+                <td>Chile</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Rogerio de Souza</td>
+                <td>Canadá</td>
+                <td>Coréia</td>
+                <td>Dinamarca</td>
+            </tr>
+            <tr>
+                <td>Gustavo Amaral</td>
+                <td>México</td>
+                <td>Indonésia</td>
+                <td>Holanda</td>
+            </tr>
+            <tr>
+                <td>Luiz da Silva</td>
+                <td>Vaticano</td>
+                <td>Itália</td>
+                <td>Bali</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

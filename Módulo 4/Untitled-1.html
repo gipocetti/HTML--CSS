@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4- Estudos de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe  {
+            border: 2px ; /* O que prevalece é o css ent caso queira ajustar a borda, mudar no css*/
+        }
+        iframe#tela{
+            width: 95%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1> Testando o uso de iframe </h1>
+<p>
+    <!-- Tamanho padrão 300x150 -->
+    Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="1">
+        <!-- frameborder= 0 (sem borda) ou 1 (com borda de 1px)-->
+        <a href="https://www.cursoemvideo.com" target="_blank"> Curso em video </a> 
+    <!-- caso não for compativel entra no link-->
+    </iframe> para aprender a programar
+</p>
+<p>
+    O repositório do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+        <a href="https://gustavoguanabara.github.io" target="_blank"> no github </a>
+    </iframe> também é bem legal!
+</p>
+<h1> Faça uma escolha </h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi iste modi, asperiores, voluptate quae est veritatis enim minima perferendis necessitatibus autem. Distinctio consequatur nam facere nulla nemo! Iusto, quas!</p>
+<ul>
+    <li> <a href="Untitled-2.html" target="frame"> Primeira página </a></li>
+    <li> <a href="Untitled-3.html" target="frame"> Segunda página </a></li>
+    <li> <a href="Untitled-4.html" target="frame"> Terceira página </a></li>
+</ul>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima non, ipsa praesentium ex quisquam error unde cupiditate illum? Minima, iure unde totam adipisci consequuntur ad. Laboriosam illo itaque corporis?
+</p>
+<iframe id="tela" name="frame" src="" frameborder="0">
+    <p> Infelizmente o seu navegador não é compatível com isso.</p>
+</iframe>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odio libero, ad perspiciatis eos suscipit accusantium aspernatur cum hic ipsam, vero rerum veritatis, officiis totam saepe molestiae exercitationem sequi delectus!</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi sapiente optio in illum sint! Similique tempora dignissimos laudantium amet corrupti dolores odit aut ducimus provident, commodi nisi beatae qui facilis?</p>
+
+</body>
+</html>

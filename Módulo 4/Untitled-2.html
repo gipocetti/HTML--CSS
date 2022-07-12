@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4- Estudos de Iframe</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: white;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Essa é a primeira página </p>
+    <table>
+        <caption>
+            Filmes Favoritos 
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Grupos </th>
+                <th scope="col"> Nomes </th>
+                <th colspan="3" scope="colgroup"> Filmes </th>
+                <!--col= coluna
+                colgroup= grupo de colunas
+                row= linha
+                rowgroup= grupo de linhas-->
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th> <!-- A palavra Total ocupa 4 células-->
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Mello</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Rogerio de Souza</td>
+                <td>Gladiador</td>
+                <td>Thor</td>
+                <td>Sempre ao Seu Lado</td>
+            </tr>
+            <tr>
+                <td>Gustavo Amaral</td>
+                <td>Homem Aranha</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+            </tr>
+            <tr>
+                <td>Luiz da Silva</td>
+                <td>Star Wars</td>
+                <td>Vikings</td>
+                <td>Interestelar</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
